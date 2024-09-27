@@ -1,14 +1,13 @@
 {
-    "id": "salam",
-    "name": "Salam",
-    "short_name": "Salam",
-    "start_url": "/salam/",
-    "scope": "/salam/",
+    "id": "/store",
+    "name": "Store",
+    "short_name": "Store",
+    "start_url": "/store/",
+    "scope": "/store/",
     "display": "standalone",
-    "gcm_sender_id": "482941778795",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "description": "Salam",
+    "description": "Store control",
     "icons": [
         {
             "src": "pwa-64x64.png",
@@ -34,3 +33,4 @@
         }
     ]
   }
+  

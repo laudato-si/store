@@ -2,38 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/salam/favicon.ico" />
-    <link rel="manifest" href="/salam/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/store/tomato.svg" />
+    <link rel="manifest" href="/store/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salam</title>
-
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
-      OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-          appId: "d81ac19c-5bb8-4a85-9ff2-b5c1601a7584",
-          path: '/salam/', 
-        });
-      });
-    </script>
-
-
-    <script type="module" crossorigin src="/salam/assets/main-2tY0rS-f.js"></script>
-    <link rel="stylesheet" crossorigin href="/salam/assets/main-BxoyP-_d.css">
-  </head>
+    <title>Store</title>
+    <script type="module" crossorigin src="/store/assets/main-4eNAYjle.js"></script>
+    <link rel="stylesheet" crossorigin href="/store/assets/main-CEexBoQV.css">
+  <link rel="manifest" href="/store/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/store/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
 
     <script>
       (() => {
-        const redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
-        }
+         const redirect = sessionStorage.redirect;
+         delete sessionStorage.redirect;
+         if (redirect && redirect !== location.href) {
+            history.replaceState(null, null, redirect);
+         }
       })();
-    </script>
+   </script>
 
   </body>
 </html>
